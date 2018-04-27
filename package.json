@@ -1,10 +1,10 @@
 {
-  "name": "lazy-load-img",
-  "version": "1.0.1",
-  "description": "lazyImg-test",
+  "name": "img-lazy-load",
+  "version": "1.0.3",
+  "description": "img-lazy-load-test",
   "main": "index.js",
   "keywords": [
-    "lazyImg"
+    "img-lazy-load"
   ],
   "author": "ymwangel",
   "license": "ISC",
