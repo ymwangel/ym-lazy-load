@@ -1,5 +1,5 @@
 {
-  "name": "lazyImg",
+  "name": "lazy-load-img",
   "version": "1.0.1",
   "description": "lazyImg-test",
   "main": "index.js",
@@ -7,5 +7,16 @@
     "lazyImg"
   ],
   "author": "ymwangel",
-  "license": "ISC"
+  "license": "ISC",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ymwangel/ym-lazy-load.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ymwangel/ym-lazy-load/issues"
+  },
+  "homepage": "https://github.com/ymwangel/ym-lazy-load#readme"
 }
