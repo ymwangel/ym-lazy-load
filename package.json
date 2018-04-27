@@ -1,0 +1,11 @@
+{
+  "name": "lazyImg",
+  "version": "1.0.1",
+  "description": "lazyImg-test",
+  "main": "index.js",
+  "keywords": [
+    "lazyImg"
+  ],
+  "author": "ymwangel",
+  "license": "ISC"
+}
