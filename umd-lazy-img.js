@@ -25,7 +25,9 @@
       var _option = {
         dataSrc: 'data-src',
         container: 'body',
-        _that:this
+        _that:this,
+        isDefault: false,
+        defaultImg: ''
       }
       for(var key in oJson) {
         _option[key] = oJson[key]
@@ -45,9 +47,9 @@
       if(_img.length) {
         for(var i=0;i<_img.length;i++) {
           var _this = _img[i]
+          var src = _this.getAttribute(_opt.dataSrc);
           if(this.isElementInViewport(_this)){
-            var src = _this.getAttribute(_opt.dataSrc);
-            _this.setAttribute("src", src);
+            _that.newImg(_this,src)
             _this.removeAttribute(_opt.dataSrc);
             _that.option.imgArray = document.querySelector(this.option.container).querySelectorAll('['+this.option.dataSrc+']')
           }
@@ -59,6 +61,14 @@
           window.attachEvent('scroll',_that._callLoadImg)
         }
       }
+    },
+    newImg(obj, src){
+      var _this = this
+      var oImg = new Image()
+      oImg.onload = function () {
+        obj.src = src
+      }
+      oImg.src = src
     },
     isElementInViewport: function (el) {
       var rect = el.getBoundingClientRect();
